@@ -21,6 +21,10 @@ def get_db_connection():
         database=db_config["database"]
     )
 
+@app.route("/api", methods=["GET"])
+@app.route("/api/", methods=["GET"])
+def api_root():
+    return "Multicloud DevOps by Veera - Naresh IT"
 # ---------- SIGNUP / SAVE ----------
 @app.route("/api/save", methods=["POST"])
 def save_user():
