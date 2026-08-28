@@ -7,10 +7,10 @@ CORS(app)  # Allow frontend to call backend
 
 # RDS MySQL config
 db_config = {
-    "host": "",  #add your rds  
+    "host": "test.c5o2uo6ic7u1.ap-south-1.rds.amazonaws.com",  #add your rds  
     "user": "admin",
     "password": "Cloud1234",  #add your password 
-    "database": "paytm"  #add your db name 
+    "database": "test"  #add your db name 
 }
 
 def get_db_connection():
